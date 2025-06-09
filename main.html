@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dear Crush</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f48fb1;
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  position: relative;
+    }
+
+    .card h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .card .footer {
+      margin-top: 20px;
+      font-style: italic;
+    }
+
+    .heart {
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      cursor: pointer;
+      animation: beat 2s ease-in-out infinite;
+    }
+
+    .heart img {
+      width: 50px;
+    }
+
+    @keyframes beat {
+      0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+<source src="Audio/kita.mp3" type="audio/mp3">
+  </audio>
+  <div class="card">
+    <h1>Dear Crush,</h1>
+    <p>
+      I’ve been keeping this in for a while, but I think this Day is the perfect time to say it—you’re the 
+      reason my days feel brighter. 
+      Every little moment with you means more than I can put into words. Your smile, your laughter, th
+      e way you make everything feel lighter—it all makes my heart race in the best way possible.
+    </p>
+    <p>
+      So, here it is... I like you, a lot. Maybe even love. Would you be my life? No matter your answer, I just wanted 
+      you to know how special you are to me. You’ve filled my heart with warmth in ways I never expected, and for 
+      that, I’m grateful. But if you say yes, I promise to make every day feel like Valentine’s Day for you—to 
+      cherish you, to make you smile, and to remind you just how much you mean to me.
+    </p>
+    <p class="footer">
+      With Love,<br>
+      Malik
+    </p>
+    <div class="heart">
+      <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Heart">
+    </div>
+  </div>
+</body>
+</html>
